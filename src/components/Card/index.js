@@ -4,8 +4,8 @@ function Card({ id }) {
   return (
     <div className={styles.card}>
       <a
-        href={`https://youtu.be/V-G54qlNZMk?si=${id}`}
-        title="Doutor Destino"
+        href={`https://www.youtube.com/watch?v=${id}`}
+        title="Paisagens"
         target="_blank"
         rel="noreferrer"
       >

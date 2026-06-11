@@ -1,7 +1,9 @@
 .banner {
     width: 100%;
-    height: 400px;
-    /*background-image: url('/public/images/banner-home.png');*/
+    height: 60vh;
+    min-height: 250px;
+    max-height: 450px;
+
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -9,4 +11,11 @@
     display: flex;
     align-items: center;
     padding-top: 80px;
+}
+
+@media (max-width: 768px) {
+    .banner {
+        height: 40vh;
+        padding-top: 40px;
+    }
 }

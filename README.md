@@ -1,4 +1,4 @@
-# 🎬 Projeto Filmes e Séries
+# 🎬 Projeto Filmes e Paisagens
 
 Meu primeiro projeto em React, desenvolvido para praticar conceitos fundamentais da biblioteca e aprimorar minhas habilidades em desenvolvimento Front-End.
 
