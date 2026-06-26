@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Banner from "../../components/Banner";
 import Card from "../../components/Card";
 import Category, { categories, filterCategory } from "../../components/Category";
@@ -6,6 +7,7 @@ import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 
 function Home() {
+
   return (
    
    <div>
