@@ -1,43 +1,46 @@
 # 🎬 Projeto Filmes e Paisagens
 
-Aplicação desenvolvida em **React** para praticar os principais conceitos da biblioteca, simulando uma plataforma de vídeos com pesquisa e organização por categorias.
+Aplicação desenvolvida em **React** para praticar os principais conceitos da biblioteca, simulando uma plataforma de vídeos com pesquisa, navegação por categorias e reprodução de vídeo.
 
-Durante o desenvolvimento, foram aplicados conceitos essenciais do Front-End moderno, como componentização, gerenciamento de estado e renderização dinâmica de listas.
+No projeto, são usados recursos como componentização, roteamento com `react-router-dom`, busca dinâmica e exibição em carrossel.
 
 ---
 
 ## 🚀 Tecnologias utilizadas
 
 * ⚛️ React
-* ⚡ Vite
+* 📦 Create React App / react-scripts
 * 💻 JavaScript (ES6+)
 * 🌐 HTML5
 * 🎨 CSS3
+* 🔁 `react-router-dom`
+* 🎞️ `react-slick` para carrossel
 
 ---
 
 ## ✨ Funcionalidades
 
-* 📺 Listagem de vídeos
-* 🔍 Pesquisa de vídeos por título
-* 🗂️ Filtro de vídeos por categoria
-* 🧩 Componentização da interface
-* 🔄 Renderização dinâmica utilizando `map()`
-* 📱 Interface responsiva
+* 📺 Página inicial com cards de vídeos agrupados por categoria
+* 🎞️ Carrossel horizontal para navegar pelos vídeos de cada categoria
+* 🔍 Página de pesquisa com filtro em tempo real por título ou categoria
+* ▶️ Página de reprodução de vídeo via rota dinâmica `/watch/:id`
+* 404 customizado para rotas não encontradas
+* 🧩 Componentização clara e reutilização de layout
+* 📁 Dados de vídeo carregados localmente de `src/json/videos.json`
 
 ---
 
-## 📚 Conceitos praticados
+## 📚 Conceitos aplicados
 
 * Componentes React
 * JSX
 * Props
 * Estados (`useState`)
 * Hooks
-* Renderização de listas
-* Filtros de dados
-* Organização de arquivos e componentes
-* Boas práticas de desenvolvimento
+* Renderização de listas com `map()`
+* Filtros e pesquisa dinâmica
+* Roteamento com `react-router-dom`
+* Organização de pastas por componentes e páginas
 
 ---
 
@@ -48,16 +51,16 @@ Durante o desenvolvimento, foram aplicados conceitos essenciais do Front-End mod
 git clone <url-do-repositorio>
 
 # Entre na pasta
-cd nome-do-projeto
+cd my-app
 
 # Instale as dependências
 npm install
 
 # Execute o projeto
-npm run dev
+npm start
 ```
 
-A aplicação estará disponível em:
+A aplicação ficará disponível em:
 
 ```text
 http://localhost:3000
@@ -70,19 +73,36 @@ http://localhost:3000
 ```text
 src/
  ├── components/
- ├── assets/
- ├── App.jsx
- ├── main.jsx
- └── index.css
+ │   ├── Banner/
+ │   ├── Card/
+ │   ├── Carousel/
+ │   ├── Category/
+ │   ├── Container/
+ │   ├── Footer/
+ │   ├── Header/
+ │   ├── SearchVideoList/
+ │   └── VideoList/
+ ├── json/
+ │   ├── db.json
+ │   └── videos.json
+ ├── pages/
+ │   ├── Home/
+ │   ├── Search/
+ │   ├── Watch/
+ │   └── PageNotFound/
+ ├── App.js
+ ├── index.js
+ ├── index.css
+ └── routes.js
 ```
 
 ---
 
 ## 🎯 Objetivo
 
-Este projeto faz parte dos meus estudos em **React** e tem como objetivo colocar em prática os principais conceitos da biblioteca através da construção de aplicações reais.
+Este projeto faz parte dos meus estudos em **React** e tem como objetivo praticar conceitos de front-end moderno por meio de uma aplicação interativa de vídeos.
 
-A cada aula novas funcionalidades são adicionadas, tornando o projeto cada vez mais completo.
+A cada atualização, novas funcionalidades foram inseridas para melhorar a experiência: buscas, categorias, carrossel e navegação por rotas.
 
 ---
 
