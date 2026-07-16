@@ -1,14 +1,36 @@
 .card {
-    display: flex;
+    position: relative;
+    display: inline-block;
 }
 
-.card img {
+.capa {
     width: 225px;
     border-radius: 8px;
 }
 
-.card img:hover {
+.capa:hover {
     transform: scale(1.15);
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(34, 34, 34, 0.87);
+    box-shadow: 0 0 10px  #222;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    background-color: #00000050;
+    border-radius: 10px;
+    padding: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
+}
+
+.icon:hover {
+    cursor: pointer;
+    background-color: #000000;
 }
